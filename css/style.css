@@ -14,10 +14,7 @@ body{
 }
 /* Nav bar */
  
-@font-face {
-    src: url("./poppins.ttf");
-    font-family: "Poppins";
-}
+
 * {
     padding: 0;
     margin: 0;
@@ -35,23 +32,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 0px 0 10px;
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
 }
-.logo {
-    width: 120px;
-    margin-top: 8px;
-}
-nav .logo {
+/* .logo {
+    width: 500px;
+    margin-top: 50px;
+} you will have this when have another class of logo*/
+
+nav .logo1 {
     display: none;
 }
 
 .logo1{
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 20px;
-    text-decoration: underline white 2px;
+    
 }
+
+.joel{
+    color: #327a77;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 nav ul {
     display: flex;
 }
@@ -61,17 +65,52 @@ nav ul li a {
     margin: 0 20px;
     font-family: "Poppins";
     font-weight: 600;
-    padding: 8px 18px;
+    font-size: 1.5rem;
+    padding: 8px 20px 8px 20px;
     transition: 0.2s;
     border-radius: 30px;
+    
 }
+
+nav a:after {
+    display:block;
+    content: ''; 
+    height: 3px;
+    top: 0;
+    width: 0%;
+    border-bottom: solid 3px #019fb6; 
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+.active:after {
+    display:block;
+    content: ''; 
+    height: 3px;
+    top: 0;
+    width: 0%;
+    border-bottom: solid 3px #f4f9fa; 
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+
 nav ul li a:hover {
     background: #f8f8f8;
 }
 nav ul li a.active {
     color: #fff;
     background: #11979e;
+    padding: 17 17;
 }
+
+
 .hamburger {
     display: none;
     height: fit-content;
@@ -90,19 +129,41 @@ nav ul li a.active {
     margin: 6px 0;
     background: #212526;
 }
+
+/* .top-cloud{
+    display: block;
+} */
+
 @media only screen and (max-width: 1100px) {
     header {
-        width: 90%;
+        width: 100%;
         padding: 0 20px;
+        position:fixed;
+        background: none;
     }
+
+    .logo1{
+        margin-top: 30px;
+        margin-left: 0px;
+        position: absolute;
+    }
+
+    .top-cloud{
+        position: relative;
+        margin-left: 55%;
+    }
+    
     nav {
+        padding-top: 120px;
+        background-repeat: no-repeat;
         position: absolute;
         left: -300px;
         top: 0;
         z-index: 999;
         width: 280px;
         height: 100vh;
-        background-color: #fefefe;
+        background: rgb(131, 198, 215);
+        background: hsla(194, 33%, 29%, 0.1);
         transition: 0.2s;
         box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
     }
@@ -128,6 +189,7 @@ nav ul li a.active {
     }
     .hamburger {
         display: block;
+        margin-left: 95%;
     }
 }
 
@@ -163,6 +225,7 @@ li{
 }
 
 .art{
+    position: relative;
     width: 25%;
     margin-left: 30px;
     float: right;
@@ -179,7 +242,9 @@ li{
     text-decoration: underline;
 }
 
-
+.programmer{
+    font-size: 2rem;
+}
 
 h1{
     margin: 0;
@@ -245,7 +310,7 @@ p{
 hr{
     border-style: none;
     border-top-style: dotted;
-    border-color: rgb(107, 168, 208);
+    border-color: rgb(255, 255, 255);
     border-width: 5px;
     width: 4%;
     margin: 100px auto;
@@ -304,4 +369,3 @@ hr{
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #0f9b9b);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-
