@@ -121,7 +121,7 @@ nav ul li a.active {
     transition: 0.2s;
 }
 .hamburger:hover {
-    background: #f6f4ff;
+    background: #4ea6a9;
 }
 .hamburger .line {
     width: 30px;
@@ -167,6 +167,7 @@ nav ul li a.active {
         transition: 0.2s;
         box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
     }
+
     #nav_check:checked ~ nav {
         left: 0;
     }
@@ -270,7 +271,7 @@ h3{
 
 p{
     line-height: 2;
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 .top-cloud{
@@ -283,8 +284,7 @@ p{
 .bottom-cloud{
     height: 4rem;
     position: absolute;
-    right: 18.75%;
-    
+    right: 18.75%;    
 }
 .mountain1{
     height: 500px;
@@ -302,11 +302,37 @@ p{
 
 }
 
-.footer{
+#footer{
     margin-top: 50px;
     color: white;
-    font-size: 1rem;
+    font-size: 100%;
 }
+
+.logos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+   
+}
+
+.linkedin {
+    height: 4rem;
+    margin-right: 35px;
+}
+
+.instagram {
+    height: 4rem;
+    margin-right: 50px;
+}
+
+.facebook {
+    margin-left: 20px;
+    height: 4rem;
+}
+
+
 
 hr{
     border-style: none;
@@ -322,6 +348,7 @@ hr{
 
 .persuade{
     margin-bottom: 50px;
+    font-size: 100%;
 }
 
 * {
@@ -335,11 +362,16 @@ hr{
     text-align: center;
 }
 
+.btn:hover {
+    color: #236683;
+}
+
+
 .btn{
-    padding: 20px;
-    font-size: 16px;
+    padding: 1%;
+    font-size: 100%;
     font-weight: 550;
-    color: #fff;
+    color: white;
     cursor: pointer;
     margin: 20px;
     height: 55px;
