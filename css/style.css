@@ -304,31 +304,35 @@ p{
 
 #footer{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
     color: white;
-    font-size: 100%;
 }
 
 .logos{
     display: flex;
+    box-sizing: border-box;
+}
+
+#lg , .logos {
     justify-content: center;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    
-   
+    margin: 0 2px;
+    padding: 8px 35px;
+    margin-left: 5px 10px;
 }
 
 .linkedin {
     height: 4rem;
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 
 .instagram {
     height: 4rem;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .facebook {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     height: 4rem;
 }
 
